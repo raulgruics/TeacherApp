@@ -30,6 +30,7 @@ Route::controller(StudentController::class)->group(function () {
 Route::controller(StudentController::class)->group(function () {
     Route::get('/Students', 'show');
     Route::post('/Students', ' createProject');
+    Route::delete('/Students','delete');
 });
 
 

@@ -98,11 +98,7 @@
         
     </head>
     <body >
-     <!-- <h1>Project Name</h1>
-      <h2>Number of Groups:</h2>
-      <h2>Students per group:</h2>
-      !-->
-    
+     
 <table>
   <tr>
     <th>Student</th>
@@ -115,12 +111,9 @@
     <td>{{$showdata['student']}}</td>
     <td><select id="groups" name="groups">
     <option >{{$showdata['groups']}}</option>
-    <
   </select></td>
     <td><button class="delete-button">Delete!</button></td>
-
     @endforeach
-
   </tr>
 </table>
 
@@ -128,6 +121,7 @@
 <h1>Create new student</h1>
 <form action=" addStudent" method="POST">
          @csrf
+      
         <label for="student">Add Student</label>
         <input type="text" id="" name="student" placeholder="Student">
 

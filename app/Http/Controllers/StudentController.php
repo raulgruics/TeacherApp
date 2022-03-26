@@ -46,6 +46,14 @@ class StudentController extends Controller
     return view('Students' ,['studentsdata' => $data]);
     }
    
+    //Delete Student from the database
+ 
+    public function delete($id){ 
+
+        $delete=students::findOrFail($id);
+        $delete->delete();
+        return redirect('Students');
+    }
 
     //Add data into database
     public function addStudent(Request $request) {
@@ -57,8 +65,6 @@ class StudentController extends Controller
     return  redirect('/Students' );
     }
     
-
-
 
 
 
