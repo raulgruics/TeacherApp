@@ -24,9 +24,8 @@
           }
 
          table, th, td{
-          
              background-color:rgb(0,191,255);
-             padding:40px;
+             padding:20px;
             border: 1px solid;
              border-collapse: collapse;
               
@@ -55,25 +54,15 @@
                transform: scale(1.03);
                 transition: all 0.8s ease; 
            }
-         ul{ 
-          padding: 10px 10px 3px 10px;
-          background-color:white;
-          border-radius:5px;
-         }
-         li{
-          list-style-type: none;
-         }
-         a{
-          text-decoration: none;
-         }
+         
           label { 
-                font-size:35px;
+                font-size:25px;
                color: rgb(105,105,105);
             }
             input{
                 font-family:sans-serif;
                 letter-spacing:2px;
-                padding:15px;
+                padding:10px;
                 margin:10px;
                 border-radius:5px;
                 border:none;
